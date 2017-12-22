@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Word count results</title>
+  <title>New loan payment</title>
 
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
   <meta charset="utf-8">
@@ -99,48 +99,41 @@
       </div>  <!-- col-md-3 -->
 
       <div class="col-lg-6">
-        <div class="card border-primary mb-3">
+        <div class="card border-success mb-3">
           <div class="card-header">
-            Word count results
+            New loan payment calculation
           </div>
 
           <div class="card-body">
-            <dl class="dl-horizontal">
-              <dt>
-                Text
-              </dt>
-              <dd class="text">
-                <p>The first draft is just you telling yourself the story.</p>
-              </dd>
+            <form action="results.html">
+              <div class="form-group">
+                <label for="annual_percentage_rate">
+                  APR
+                </label>
 
-              <dt>
-                Word Count
-              </dt>
-              <dd class="word_count">
-                10
-              </dd>
+                <input type="number" step="any" class="form-control" id="annual_percentage_rate" placeholder="Enter the APR of the loan (as a percent)">
+              </div>
 
-              <dt>
-                Character Count (with spaces)
-              </dt>
-              <dd class="character_count_with_spaces">
-                55
-              </dd>
+              <div class="form-group">
+                <label for="number_of_years">
+                  Years
+                </label>
 
-              <dt>
-                Character Count (without spaces)
-              </dt>
-              <dd class="character_count_without_spaces">
-                46
-              </dd>
+                <input type="number" min="1" class="form-control" id="number_of_years" placeholder="Enter the number of years to repay the loan">
+              </div>
 
-              <dt>
-                Occurrences of <code>the</code>
-              </dt>
-              <dd class="occurrences">
-                2
-              </dd>
-            </dl>
+              <div class="form-group">
+                <label for="principal_value">
+                  Principal
+                </label>
+
+                <input type="number" min="1" class="form-control" id="principal_value" placeholder="Enter the principal of the loan">
+              </div>
+
+              <button class="btn btn-outline-success btn-block">
+                Submit
+              </button>
+            </form>
           </div>  <!-- card-body -->
         </div>  <!-- card -->
       </div>  <!-- col-lg-9 -->
