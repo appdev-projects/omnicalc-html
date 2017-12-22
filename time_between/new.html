@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Loan payment results</title>
+  <title>New time between</title>
 
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
   <meta charset="utf-8">
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-success mb-3">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-warning mb-3">
     <div class="container">
       <a class="navbar-brand" href="#">
         <i class="fas fa-calculator fa-fw"></i>
@@ -99,25 +99,43 @@
       </div>  <!-- col-md-3 -->
 
       <div class="col-lg-6">
-        <div class="card border-primary mb-3">
+        <div class="card border-warning mb-3">
           <div class="card-header">
-            Loan payment results
+            New time between calculation
           </div>
 
           <div class="card-body">
-            <dl class="dl-horizontal">
-              <dt>APR</dt>
-              <dd>4.5%</dd>
+            <form action="results.html">
+              <div class="form-group">
+                <label for="starting_time">
+                  Starting Time
+                </label>
 
-              <dt>Number of years</dt>
-              <dd>30</dd>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="starting_time">
+                  <span class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </span>
+                </div>
+              </div>
 
-              <dt>Principal</dt>
-              <dd>$50,000.00</dd>
+              <div class="form-group">
+                <label for="ending_time">
+                  Ending Time
+                </label>
 
-              <dt>Monthly Payment</dt>
-              <dd>$253.34</dd>
-            </dl>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="ending_time">
+                  <span class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </span>
+                </div>
+              </div>
+
+              <button class="btn btn-outline-warning btn-block">
+                Submit
+              </button>
+            </form>
           </div>  <!-- card-body -->
         </div>  <!-- card -->
       </div>  <!-- col-lg-9 -->
