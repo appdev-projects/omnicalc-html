@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Time between results</title>
+  <title>New descriptive statistics</title>
 
   <!-- Expand the number of characters we can use in the document beyond basic ASCII 🎉 -->
   <meta charset="utf-8">
@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-warning mb-3">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info mb-3">
     <div class="container">
       <a class="navbar-brand" href="#">
         <i class="fas fa-calculator fa-fw"></i>
@@ -99,37 +99,25 @@
       </div>  <!-- col-md-3 -->
 
       <div class="col-lg-6">
-        <div class="card border-warning mb-3">
+        <div class="card border-info mb-3">
           <div class="card-header">
-            Time between results
+            New descriptive statistics calculation
           </div>
 
           <div class="card-body">
-            <dl>
-              <dt>Starting Time</dt>
-              <dd>11:30am on January 20, 2017</dd>
+            <form action="results.html">
+              <div class="form-group">
+                <label for="user_text">
+                  Numbers
+                </label>
 
-              <dt>Ending Time</dt>
-              <dd>11:30am on January 20, 2021</dd>
+                <textarea class="form-control" rows="3" placeholder="Enter your numbers (separated by spaces)" id="list_of_numbers">10 1 2 3 4 5 6 7 8 8 9</textarea>
+              </div>
 
-              <dt>Seconds</dt>
-              <dd>126230400.0</dd>
-
-              <dt>Minutes</dt>
-              <dd>2103840.0</dd>
-
-              <dt>Hours</dt>
-              <dd>35064.0</dd>
-
-              <dt>Days</dt>
-              <dd>1461.0</dd>
-
-              <dt>Weeks</dt>
-              <dd>208.71428571428572</dd>
-
-              <dt>Years</dt>
-              <dd>4.0</dd>
-            </dl>
+              <button class="btn btn-outline-info btn-block">
+                Submit
+              </button>
+            </form>
           </div>  <!-- card-body -->
         </div>  <!-- card -->
       </div>  <!-- col-lg-9 -->
