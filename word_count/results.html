@@ -105,27 +105,42 @@
           </div>
 
           <div class="card-body">
-            <form action="results.html">
-              <div class="form-group">
-                <label for="user_text">
-                  Text
-                </label>
+            <dl class="dl-horizontal">
+              <dt>
+                Text
+              </dt>
+              <dd class="text">
+                <p>The first draft is just you telling yourself the story.</p>
+              </dd>
 
-                <textarea class="form-control" rows="3" placeholder="Enter your text" id="user_text"></textarea>
-              </div>
+              <dt>
+                Word Count
+              </dt>
+              <dd class="word_count">
+                10
+              </dd>
 
-              <div class="form-group">
-                <label for="user_word">
-                  Special Word (optional)
-                </label>
+              <dt>
+                Character Count (with spaces)
+              </dt>
+              <dd class="character_count_with_spaces">
+                55
+              </dd>
 
-                <input type="name" class="form-control" id="user_word" placeholder="Enter a word to count the occurrences of">
-              </div>
+              <dt>
+                Character Count (without spaces)
+              </dt>
+              <dd class="character_count_without_spaces">
+                46
+              </dd>
 
-              <button class="btn btn-outline-primary btn-block">
-                Submit
-              </button>
-            </form>
+              <dt>
+                Occurrences of <code>the</code>
+              </dt>
+              <dd class="occurrences">
+                2
+              </dd>
+            </dl>
           </div>  <!-- card-body -->
         </div>  <!-- card -->
       </div>  <!-- col-lg-9 -->
